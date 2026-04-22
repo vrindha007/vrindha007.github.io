@@ -1,36 +1,196 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title> Rock Resume</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <section id="main"
-      <nav>
-        <a hreff="a" class="logo">
-          <img src="logo.png" alt="The Logo of Project Rock">
-  </body>
-</html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vrindha | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
 
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
 
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
 
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
+h2 {
+    color: #38bdf8;
+}
 
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
+.card:hover {
+    transform: translateY(-5px);
+}
 
-<div class="content">
-<div class="image">
-  <img src="dwayne.jpg"
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm Vrindha 👋</h1>
+    <p>AI/ML Engineer | Generative AI | Backend Developer</p>
 </div>
-<div class="main-text">
-  <h1>Hello,I am the Rock</h1>
-  <p>Hey in this video i will be showing you guys how to build a website using only HTML ans CSS</p>
-  <a hreff="#" class="resume-btn">See my resume</p>
- </div> 
 
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an aspiring AI/ML Engineer with a strong focus on NLP, LLMs, and Generative AI.
+        I enjoy building intelligent, real-world systems that combine machine learning and backend development.
+        I have hands-on experience in developing scalable applications and data-driven solutions,
+        and I actively contribute to tech communities like Google Developer Student Clubs.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SQL</span>
+        <span>MongoDB</span>
+        <span>Machine Learning</span>
+        <span>OpenCV</span>
+        <span>MediaPipe</span>
+        <span>Hugging Face</span>
+        <span>GCP</span>
+        <span>Git</span>
+        <span>Backend Development</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Intelligent Content Analysis Platform</h3>
+        <p>
+            Developed a smart content analysis system using NLP and AI techniques to extract insights,
+            process textual data, and enhance decision-making through intelligent automation.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Eye Blink Detection (Morse Code)</h3>
+        <p>
+            Built a computer vision-based system enabling paralyzed patients to communicate using eye blinks,
+            achieving high real-time accuracy using OpenCV and MediaPipe.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Sales Forecasting System</h3>
+        <p>
+            Implemented ARIMA-based time series forecasting combined with employee management
+            to improve business decision-making and workforce planning.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Title & Author Extraction + LLM Prediction</h3>
+        <p>
+            Designed an automated system using OCR, NER, and LLMs to extract metadata and generate alternative titles.
+        </p>
+    </div>
+
+</section>
+
+<section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="card">
+        <h3>🏆 Hackathon Winner</h3>
+        <p>
+            Won the "Creative Team" award in a hackathon conducted by Hardpoint Consulting (USA)
+            for building an innovative and commercially viable solution.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🎤 Research Presentation</h3>
+        <p>
+            Presented research paper "iBlink: Eye Blink Detection and Communication Using Morse Code"
+            at an international AI conference.
+        </p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: vrindhavasanthakumar@gmail.com</p>
+    <p>GitHub: vrindha007</p>
+</section>
+
+</body>
+</html>
